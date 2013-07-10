@@ -18,6 +18,7 @@
 		44755102178DAD1700DD0C99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44755101178DAD1700DD0C99 /* Default-568h@2x.png */; };
 		44755105178DAD1700DD0C99 /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44755104178DAD1700DD0C99 /* VBViewController.m */; };
 		44755108178DAD1700DD0C99 /* VBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44755106178DAD1700DD0C99 /* VBViewController.xib */; };
+		4475510F178DAD4400DD0C99 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4475510E178DAD4400DD0C99 /* bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		44755103178DAD1700DD0C99 /* VBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
 		44755104178DAD1700DD0C99 /* VBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
 		44755107178DAD1700DD0C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VBViewController.xib; sourceTree = "<group>"; };
+		4475510E178DAD4400DD0C99 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		447550F1178DAD1700DD0C99 /* KeyboardPanningDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4475510E178DAD4400DD0C99 /* bg@2x.png */,
 				447550FA178DAD1700DD0C99 /* VBAppDelegate.h */,
 				447550FB178DAD1700DD0C99 /* VBAppDelegate.m */,
 				44755103178DAD1700DD0C99 /* VBViewController.h */,
@@ -164,6 +167,7 @@
 				44755100178DAD1700DD0C99 /* Default@2x.png in Resources */,
 				44755102178DAD1700DD0C99 /* Default-568h@2x.png in Resources */,
 				44755108178DAD1700DD0C99 /* VBViewController.xib in Resources */,
+				4475510F178DAD4400DD0C99 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +265,14 @@
 		4475510C178DAD1700DD0C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KeyboardPanningDemo\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KeyboardPanningDemo/KeyboardPanningDemo-Prefix.pch";
 				INFOPLIST_FILE = "KeyboardPanningDemo/KeyboardPanningDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,9 +281,14 @@
 		4475510D178DAD1700DD0C99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KeyboardPanningDemo\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KeyboardPanningDemo/KeyboardPanningDemo-Prefix.pch";
 				INFOPLIST_FILE = "KeyboardPanningDemo/KeyboardPanningDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
